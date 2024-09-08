@@ -187,6 +187,11 @@ Otherwise, one of the following error codes is returned:
 ]
 ```
 
+### CURL Example
+```bash
+curl -X GET "https://leansearch.net/api/search?query=bezout%20theorem&num_results=3"
+```
+
 ### Python Client Example
 ```python
 import json
