@@ -205,27 +205,23 @@ class Response(TypedDict):
 def search(query: str, num_results: int = 50) -> list[Response]:
     client = httpx.Client()
     res = client.get(f"https://leansearch.net/api/search", 
-                        params={
-                            {
+                        params={             
                                 "query": query,
                                 "num_results": num_results
-                            }
                         }
                         )
     assert res.status_code == 200, f'status code: {res.status_code}, message: {res.text}'
-    return json.dumps(res.json())
+    return res.json()
 
 async def search_async(query: str, num_results: int = 50) -> list[Response]:
     async with httpx.AsyncClient() as ac:
         res = await ac.get(f"https://leansearch.net/api/search", 
                             params={
-                                {
                                     "query": query,
                                     "num_results": num_results
-                                }
                             }
                             )
         assert res.status_code == 200, f'status code: {res.status_code}, message: {res.text}'
-        return json.dumps(res.json())
+        return res.json()
     
 ```
