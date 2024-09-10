@@ -42,9 +42,9 @@ Normally, Response is a json that conforms to the following schema:
                 "type": "string",
                 "description": "Lean type of this item",
                 "examples": [
-                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081),   Module.rank K \u21a5(LinearMap.range f) + Module.rank K \u21a5(LinearMap.ker f) = Module.rank K V",
-                    "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'}   [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] (f : V \u2192\u2097[K] V\u2082),   finrank K \u21a5(LinearMap.range f) + finrank K \u21a5(LinearMap.ker f) = finrank K V",
-                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081),   Surjective \u21d1f \u2192 Module.rank K V = Module.rank K V\u2081 + Module.rank K \u21a5(LinearMap.ker f)"
+                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081), Module.rank K \u21a5(LinearMap.range f) + Module.rank K \u21a5(LinearMap.ker f) = Module.rank K V",
+                    "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'} [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] (f : V \u2192\u2097[K] V\u2082), finrank K \u21a5(LinearMap.range f) + finrank K \u21a5(LinearMap.ker f) = finrank K V",
+                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081), Surjective \u21d1f \u2192 Module.rank K V = Module.rank K V\u2081 + Module.rank K \u21a5(LinearMap.ker f)"
                 ]
             },
             "kind": {
@@ -97,7 +97,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 164679,
         "formal_name": "rank_range_add_rank_ker",
-        "formal_type": "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081),   Module.rank K \u21a5(LinearMap.range f) + Module.rank K \u21a5(LinearMap.ker f) = Module.rank K V",
+        "formal_type": "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081), Module.rank K \u21a5(LinearMap.range f) + Module.rank K \u21a5(LinearMap.ker f) = Module.rank K V",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.Basic",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=rank_range_add_rank_ker#doc",
@@ -106,7 +106,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 165855,
         "formal_name": "LinearMap.finrank_range_add_finrank_ker",
-        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'}   [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] (f : V \u2192\u2097[K] V\u2082),   finrank K \u21a5(LinearMap.range f) + finrank K \u21a5(LinearMap.ker f) = finrank K V",
+        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'} [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] (f : V \u2192\u2097[K] V\u2082), finrank K \u21a5(LinearMap.range f) + finrank K \u21a5(LinearMap.ker f) = finrank K V",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.FiniteSpan",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.finrank_range_add_finrank_ker#doc",
@@ -115,7 +115,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 164680,
         "formal_name": "rank_eq_of_surjective",
-        "formal_type": "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081),   Surjective \u21d1f \u2192 Module.rank K V = Module.rank K V\u2081 + Module.rank K \u21a5(LinearMap.ker f)",
+        "formal_type": "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081), Surjective \u21d1f \u2192 Module.rank K V = Module.rank K V\u2081 + Module.rank K \u21a5(LinearMap.ker f)",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.Basic",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=rank_eq_of_surjective#doc",
@@ -124,7 +124,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 164684,
         "formal_name": "rank_add_rank_split",
-        "formal_type": "\u2200 {K : Type u} {V V\u2081 V\u2082 V\u2083 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] [inst_5 : AddCommGroup V\u2082] [inst_6 : Module K V\u2082]   [inst_7 : AddCommGroup V\u2083] [inst_8 : Module K V\u2083] (db : V\u2082 \u2192\u2097[K] V) (eb : V\u2083 \u2192\u2097[K] V) (cd : V\u2081 \u2192\u2097[K] V\u2082)   (ce : V\u2081 \u2192\u2097[K] V\u2083),   \u22a4 \u2264 LinearMap.range db \u2294 LinearMap.range eb \u2192     LinearMap.ker cd = \u22a5 \u2192       db \u2218\u2097 cd = eb \u2218\u2097 ce \u2192         (\u2200 (d : V\u2082) (e : V\u2083), db d = eb e \u2192 \u2203 c, cd c = d \u2227 ce c = e) \u2192           Module.rank K V + Module.rank K V\u2081 = Module.rank K V\u2082 + Module.rank K V\u2083",
+        "formal_type": "\u2200 {K : Type u} {V V\u2081 V\u2082 V\u2083 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] [inst_5 : AddCommGroup V\u2082] [inst_6 : Module K V\u2082] [inst_7 : AddCommGroup V\u2083] [inst_8 : Module K V\u2083] (db : V\u2082 \u2192\u2097[K] V) (eb : V\u2083 \u2192\u2097[K] V) (cd : V\u2081 \u2192\u2097[K] V\u2082) (ce : V\u2081 \u2192\u2097[K] V\u2083), \u22a4 \u2264 LinearMap.range db \u2294 LinearMap.range eb \u2192 LinearMap.ker cd = \u22a5 \u2192 db \u2218\u2097 cd = eb \u2218\u2097 ce \u2192 (\u2200 (d : V\u2082) (e : V\u2083), db d = eb e \u2192 \u2203 c, cd c = d \u2227 ce c = e) \u2192 Module.rank K V + Module.rank K V\u2081 = Module.rank K V\u2082 + Module.rank K V\u2083",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.Basic",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=rank_add_rank_split#doc",
@@ -133,7 +133,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 165868,
         "formal_name": "LinearMap.ker_eq_bot_iff_range_eq_top_of_finrank_eq_finrank",
-        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'}   [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] [inst_6 : FiniteDimensional K V\u2082],   finrank K V = finrank K V\u2082 \u2192 \u2200 {f : V \u2192\u2097[K] V\u2082}, LinearMap.ker f = \u22a5 \u2194 LinearMap.range f = \u22a4",
+        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'} [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] [inst_6 : FiniteDimensional K V\u2082], finrank K V = finrank K V\u2082 \u2192 \u2200 {f : V \u2192\u2097[K] V\u2082}, LinearMap.ker f = \u22a5 \u2194 LinearMap.range f = \u22a4",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.FiniteSpan",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.ker_eq_bot_iff_range_eq_top_of_finrank_eq_finrank#doc",
@@ -142,7 +142,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 165910,
         "formal_name": "Module.End.ker_pow_eq_ker_pow_finrank_of_le",
-        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : FiniteDimensional K V] {f : End K V} {m : \u2115},   finrank K V \u2264 m \u2192 LinearMap.ker (f ^ m) = LinearMap.ker (f ^ finrank K V)",
+        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : FiniteDimensional K V] {f : End K V} {m : \u2115}, finrank K V \u2264 m \u2192 LinearMap.ker (f ^ m) = LinearMap.ker (f ^ finrank K V)",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.FiniteSpan",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.End.ker_pow_eq_ker_pow_finrank_of_le#doc",
@@ -151,7 +151,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 165804,
         "formal_name": "FiniteDimensional.finrank_eq_rank'",
-        "formal_type": "\u2200 (K : Type u) (V : Type v) [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : FiniteDimensional K V], \u2191(finrank K V) = Module.rank K V",
+        "formal_type": "\u2200 (K : Type u) (V : Type v) [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : FiniteDimensional K V], \u2191(finrank K V) = Module.rank K V",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.FiniteSpan",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FiniteDimensional.finrank_eq_rank'#doc",
@@ -160,7 +160,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 56577,
         "formal_name": "LinearIsometry.extend.proof_4",
-        "formal_type": "\u2200 {\ud835\udd5c : Type u_2} [inst : IsROrC \ud835\udd5c] {V : Type u_1} [inst_1 : NormedAddCommGroup V] [inst_2 : InnerProductSpace \ud835\udd5c V]   [inst_3 : FiniteDimensional \ud835\udd5c V] {S : Submodule \ud835\udd5c V} (L : \u21a5S \u2192\u2097\u1d62[\ud835\udd5c] V),   finrank \ud835\udd5c \u21a5(LinearMap.range L.toLinearMap)\u15ee = finrank \ud835\udd5c \u21a5S\u15ee",
+        "formal_type": "\u2200 {\ud835\udd5c : Type u_2} [inst : IsROrC \ud835\udd5c] {V : Type u_1} [inst_1 : NormedAddCommGroup V] [inst_2 : InnerProductSpace \ud835\udd5c V] [inst_3 : FiniteDimensional \ud835\udd5c V] {S : Submodule \ud835\udd5c V} (L : \u21a5S \u2192\u2097\u1d62[\ud835\udd5c] V), finrank \ud835\udd5c \u21a5(LinearMap.range L.toLinearMap)\u15ee = finrank \ud835\udd5c \u21a5S\u15ee",
         "kind": "theorem",
         "file_name": "Mathlib.Analysis.Convex.Complex",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearIsometry.extend.proof_4#doc",
@@ -169,7 +169,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 165889,
         "formal_name": "finrank_eq_one_iff_of_nonzero",
-        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] (v : V),   v \u2260 0 \u2192 (finrank K V = 1 \u2194 span K {v} = \u22a4)",
+        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] (v : V), v \u2260 0 \u2192 (finrank K V = 1 \u2194 span K {v} = \u22a4)",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.FiniteSpan",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=finrank_eq_one_iff_of_nonzero#doc",
@@ -178,7 +178,7 @@ Otherwise, one of the following error codes is returned:
     {
         "id": 165851,
         "formal_name": "LinearMap.ker_eq_bot_iff_range_eq_top",
-        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : FiniteDimensional K V] {f : V \u2192\u2097[K] V}, LinearMap.ker f = \u22a5 \u2194 LinearMap.range f = \u22a4",
+        "formal_type": "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : FiniteDimensional K V] {f : V \u2192\u2097[K] V}, LinearMap.ker f = \u22a5 \u2194 LinearMap.range f = \u22a4",
         "kind": "theorem",
         "file_name": "Mathlib.LinearAlgebra.FiniteSpan",
         "doc_url": "https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LinearMap.ker_eq_bot_iff_range_eq_top#doc",

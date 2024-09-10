@@ -25,9 +25,9 @@
                 "type": "string",
                 "description": "Lean type of this item",
                 "examples": [
-                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081),   Module.rank K \u21a5(LinearMap.range f) + Module.rank K \u21a5(LinearMap.ker f) = Module.rank K V",
-                    "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'}   [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] (f : V \u2192\u2097[K] V\u2082),   finrank K \u21a5(LinearMap.range f) + finrank K \u21a5(LinearMap.ker f) = finrank K V",
-                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V]   [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081),   Surjective \u21d1f \u2192 Module.rank K V = Module.rank K V\u2081 + Module.rank K \u21a5(LinearMap.ker f)"
+                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081), Module.rank K \u21a5(LinearMap.range f) + Module.rank K \u21a5(LinearMap.ker f) = Module.rank K V",
+                    "\u2200 {K : Type u} {V : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] {V\u2082 : Type v'} [inst_3 : AddCommGroup V\u2082] [inst_4 : Module K V\u2082] [inst_5 : FiniteDimensional K V] (f : V \u2192\u2097[K] V\u2082), finrank K \u21a5(LinearMap.range f) + finrank K \u21a5(LinearMap.ker f) = finrank K V",
+                    "\u2200 {K : Type u} {V V\u2081 : Type v} [inst : DivisionRing K] [inst_1 : AddCommGroup V] [inst_2 : Module K V] [inst_3 : AddCommGroup V\u2081] [inst_4 : Module K V\u2081] (f : V \u2192\u2097[K] V\u2081), Surjective \u21d1f \u2192 Module.rank K V = Module.rank K V\u2081 + Module.rank K \u21a5(LinearMap.ker f)"
                 ]
             },
             "kind": {
